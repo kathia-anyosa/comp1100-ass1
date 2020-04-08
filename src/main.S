@@ -5,7 +5,7 @@
 
 
 main:
-  bl init
+  bl init @
 
 begin_max:
   mov r4, 0x7fff
