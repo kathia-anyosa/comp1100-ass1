@@ -3,7 +3,7 @@
 
 .type main, %function
 
-@COMP2300 Assignment 1 part 1 - produce a triangle wave with frequency 440Hz
+@COMP2300 Assignment 1 Part 1 - Produce a triangle wave with frequency 440Hz
 
 main:
   bl init @branch to init in order to turn on headphone jack
