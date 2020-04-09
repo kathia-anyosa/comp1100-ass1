@@ -39,7 +39,7 @@ counter_down: @decrease count by one and branch to begin_min once count is zero
   bne loop_down @check that count is not zero
   beq begin_min
 
-counter_up: @decrease count by one and branch to begin_min once count is zero
+counter_up: @decrease count by one and branch to begin_max once count is zero
   subs r5, #1 
   bne loop_up @check that count is not zero
   beq begin_max
