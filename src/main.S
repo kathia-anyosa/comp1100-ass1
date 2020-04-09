@@ -22,13 +22,13 @@ begin_min:
   mov r5, #54 @set counter to 54 in r5
   b loop_up
 
-loop_down: @continiously decrease the value at r4 by 1213
+loop_down: @continuously decrease the value at r4 by 1213
   sub r4, 1213
   mov r0, r4 
   bl BSP_AUDIO_OUT_Play_Sample 
   b counter_down
 
-loop_up: @continiously increase the value at r4 by 1213
+loop_up: @continuously increase the value at r4 by 1213
   add r4, 1213
   mov r0, r4 
   bl BSP_AUDIO_OUT_Play_Sample 
