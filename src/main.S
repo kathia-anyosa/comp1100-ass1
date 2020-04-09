@@ -32,15 +32,15 @@ loop_min: @continuously move value at r4 to r0
   bl BSP_AUDIO_OUT_Play_Sample 
   b counter_up
 
-counter_down: @substract 1 from current count
+counter_down: @decrease count by one and branch to begin_min once count is zero
   subs r5, #1 
   bne loop_max @check that count is not zero
-  beq begin_min @if count is equal to zero, branch to begin_min so as to produce other half of wave
+  beq begin_min
 
-counter_up: @substract 1 from the current count
+counter_up: @decrease count by one and branch to begin_max once count is zero
   subs r5, #1 
   bne loop_min @check that count is not zero
-  beq begin_max @if count is equal to zero, branch to begin_max so as to produce other half of wave
+  beq begin_max
 
 nop
 b main
