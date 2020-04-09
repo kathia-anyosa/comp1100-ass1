@@ -22,7 +22,7 @@ begin_min:
   mov r5, #54 @set counter to 54 in r5
   b loop_min
 
-loop_max: @continiously move max value at r4 to r0
+loop_max: @continuously move max value at r4 to r0
   mov r0, r4 
   bl BSP_AUDIO_OUT_Play_Sample 
   b counter_down
